@@ -102,7 +102,7 @@
 		
 		private function getColorFromMousePos():void
 		{
-			_trackedcolor = _bmd.getPixel(stage.mouseX, stage.mouseY);
+			_trackedcolor = _bmd.getPixel(_width-(stage.mouseX), stage.mouseY);
 			removeChild(_circle);
 			drawCircle();
 		}
